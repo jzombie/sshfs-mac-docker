@@ -1,4 +1,4 @@
-# docker-sshfs
+# sshfs-mac-docker
 
 Experimental repo to provide SSHFS to Mac w/o installing macFUSE and patching the kernel with a custom ktext.
 
