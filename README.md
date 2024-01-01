@@ -33,7 +33,7 @@ docker exec -it docker-sshfs bash
 
 You'll be dropped into the container at this point.
 
-Run (replacing `user@host:path` with your SSHFS endpoint).
+Run (replacing `user@host:path` with your SSHFS endpoint):
 
 ```bash
 sshfs -o allow_other,uid=1000,gid=1000 user@host:path /samba-share
