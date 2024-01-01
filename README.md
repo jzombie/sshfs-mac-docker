@@ -23,6 +23,8 @@ In one terminal shell, run:
 docker run --privileged --name docker-sshfs -p 127.0.0.1:139:139 -p 127.0.0.1:445:445 docker-sshfs
 ```
 
+Samba is configured to listen on ports 139 and 445 and is accessible only from localhost.
+
 ## Mounting Remote Filesystem
 
 In another terminal:
