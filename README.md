@@ -20,7 +20,7 @@ docker build -t docker-sshfs .
 In one terminal shell, run:
 
 ```bash
-docker run --privileged --name docker-sshfs -p 139:139 -p 445:445 docker-sshfs
+docker run --privileged --name docker-sshfs -p 127.0.0.1:139:139 -p 127.0.0.1:445:445 docker-sshfs
 ```
 
 ## Mounting Remote Filesystem
