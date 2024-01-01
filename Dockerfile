@@ -26,10 +26,6 @@ RUN echo "user_allow_other" >> /etc/fuse.conf
 # Expose the necessary ports for Samba
 EXPOSE 139 445
 
-# Mount the SSHFS (replace with actual remote details)
-# Note: This command should be run interactively or via a script since it requires remote server credentials
-# RUN sshfs sshuser@remote-server:/path/to/remote/dir /remote
-
 # Link the SSHFS mount to the Samba share
 RUN ln -s /remote /samba-share/remote
 
