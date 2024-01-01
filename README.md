@@ -6,7 +6,7 @@ Remote filesystem is mounted in container via SSHFS and exposed to Mac via Samba
 
 ----
 
-Use OrbStack (haven't tested via Docker Desktop)
+Highly recommended to use [OrbStack](https://orbstack.dev/) (haven't yet tested via Docker Desktop).
 
 ## Build the container
 
