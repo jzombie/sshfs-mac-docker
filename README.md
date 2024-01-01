@@ -1,6 +1,6 @@
 # docker-sshfs
 
-Experimental repo to provide SSHFS to Mac w/o installing Mac Fuse and patching the kernel.
+Experimental repo to provide SSHFS to Mac w/o installing macFUSE and patching the kernel with a custom ktext.
 
 Remote filesystem is mounted in container via SSHFS and exposed to Mac via Samba.
 
