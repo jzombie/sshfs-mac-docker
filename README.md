@@ -42,23 +42,21 @@ sshfs -o allow_other,uid=1000,gid=1000 user@host:path /samba-share
 allow-other is needed to be able to access via mac samba
 uid=1000,gid=1000 is needed for write-access (otherwise, it will be read-only if omitted)
 
-If getting message: fusermount: failed to unmount /samba-share: Device or resource busy, unmount the drive from Finder
-
 ## Connecting to Samba share in container
 
-### Find Docker IP of container (localhost doesn't seem to work for this)
+1. Find Docker IP of container (localhost doesn't seem to work for this)
 
 ```bash
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' docker-sshfs
 ```
 
-Navigate to Finder -> Go -> Connect to Server
+2. Navigate to Finder -> Go -> Connect to Server
 
-Enter smb://ip-of-docker-container
+3. Enter `smb://ip-of-docker-container``
 
-If all goes well, connect as Guest
+    If all goes well, connect as `Guest`.
 
-Open Finder, navigate to Network tab, find the IP of the Docker container, and you should now have access to remote files
+4. Open `Finder`, navigate to `Network` tab, find the IP of the Docker container, and you should now have access to remote files
 
 ## Unmounting Remote Filesystem
 
@@ -67,3 +65,11 @@ If wanting to unmount the SSHFS endpoint (without stopping the container):
 ```bash
 fusermount -u /samba-share
 ```
+
+If getting message
+
+```bash
+fusermount: failed to unmount /samba-share: Device or resource busy
+```
+
+...unmount the drive from Finder (or just stop the container)
