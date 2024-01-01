@@ -73,3 +73,7 @@ fusermount: failed to unmount /samba-share: Device or resource busy
 ```
 
 ...unmount the drive from Finder (or just stop the container)
+
+## Not wanting Docker?
+
+Maybe this will work instead: https://github.com/macos-fuse-t/fuse-t
