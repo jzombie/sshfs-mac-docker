@@ -10,7 +10,7 @@ The standard Docker volume mounts won't work for this purpose because they are d
 
 ----
 
-Highly recommended to use [OrbStack](https://orbstack.dev/) (haven't yet tested via Docker Desktop).
+Highly recommended to use [OrbStack](https://orbstack.dev/).  Docker Desktop will not work for this without modifying the network routing.
 
 ## Build the container
 
