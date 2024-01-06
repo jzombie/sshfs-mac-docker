@@ -4,6 +4,10 @@ Experimental repo to provide SSHFS to Mac *WITHOUT* installing macFUSE and patch
 
 Remote filesystem is mounted in container via SSHFS and exposed to Mac via Samba.
 
+## Why Samba instead of Volume Mounts?
+
+The standard Docker volume mounts won't work for this purpose because they are designed for local file systems and do not natively support SSH-based file system connections. The sshfs-mac-docker solution uses SSHFS to overcome this limitation, allowing remote file systems to be mounted inside Docker containers as if they were local volumes, which is not achievable with Docker's standard volume mounting features.
+
 ----
 
 Highly recommended to use [OrbStack](https://orbstack.dev/) (haven't yet tested via Docker Desktop).
