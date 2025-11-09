@@ -1,5 +1,7 @@
 # sshfs-mac-docker
 
+[![Ask DeepWiki][deepwiki-badge]][deepwiki-page]
+
 _Experimental_ repo to provide SSHFS to Mac *WITHOUT* installing macFUSE and patching the kernel with a custom kext.
 
 Remote filesystem is mounted in container via SSHFS and exposed to Mac via Samba.
@@ -87,3 +89,6 @@ fusermount: failed to unmount /samba-share: Device or resource busy
 ## Not wanting Docker?
 
 Maybe this will work instead: https://github.com/macos-fuse-t/fuse-t
+
+[deepwiki-page]: https://deepwiki.com/jzombie/sshfs-mac-docker
+[deepwiki-badge]: https://deepwiki.com/badge.svg
